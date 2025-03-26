@@ -40,7 +40,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-        
+      - name: Check build output
+        run: ls -l ./dist
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
