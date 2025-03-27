@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router"
-import useScreenWidth from "./composables/useScreenWidth";
-const [width, height] = useScreenWidth()
+import useScreenWidth from "./composables/useScreenWidth.ts";
+import useMediaQuery from "./composables/useMediaQuery.ts"
+// const bp = useMediaQuery()
+const w = useScreenWidth()
+console.log(w.value)
 </script>
 
 <template>
